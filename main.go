@@ -1,19 +1,17 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"runtime"
 	"sync"
 
 	"github.com/hajimehoshi/ebiten/v2"
-	"github.com/hajimehoshi/ebiten/v2/ebitenutil"
 )
 
 const (
-	screenWidth  = 1920
-	screenHeight = 1080
-	screenScale  = 1
+	screenWidth  = 1920 / 2
+	screenHeight = 1080 / 2
+	screenScale  = 2
 )
 
 type Game struct {
@@ -117,7 +115,7 @@ func (g *Game) Draw(screen *ebiten.Image) {
 	screen.WritePixels(g.pixels)
 	
 	//  write fps to screen
-	ebitenutil.DebugPrint(screen, fmt.Sprintf("%v",ebiten.ActualFPS()))
+	// ebitenutil.DebugPrint(screen, fmt.Sprintf("%v",ebiten.ActualFPS()))
 }
 
 func (g *Game) Layout(outsideWidth, outsideHeight int) (int, int) {
