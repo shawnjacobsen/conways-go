@@ -1,4 +1,4 @@
-# Conways-GOL
+# Conways-GO
 An implementation of Conway's Game of Life in Go
 
 ## Demo
