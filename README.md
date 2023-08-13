@@ -2,7 +2,7 @@
 An implementation of Conway's Game of Life in Go
 
 ## Demo
-![Conway's Game of Life Demo](https://github.com/shawnjacobsen/conways-go/blob/main/demo/Conway's%20Game%20of%20Life%20(%40Shawn%20Jacobsen).gif)]
+![Conway's Game of Life Demo](https://github.com/shawnjacobsen/conways-go/blob/main/demo/Conway's%20Game%20of%20Life%20(%40Shawn%20Jacobsen).gif)
 
 ## TODO
 - [x] basic game functionality
