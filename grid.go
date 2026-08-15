@@ -2,6 +2,10 @@ package main
 
 import "math/rand"
 
+type Cell struct {
+	X, Y int
+}
+
 type Grid struct {
 	cells  []bool
 	height int
@@ -21,7 +25,6 @@ func randomizeGrid(grid *Grid) {
 	for i := range grid.cells {
 		grid.cells[i] = rand.Intn(10) == 1
 	}
-
 }
 
 func (grid *Grid) getGridCell(x int, y int) *bool {
